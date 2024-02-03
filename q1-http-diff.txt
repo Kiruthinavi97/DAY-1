@@ -1,0 +1,36 @@
+//Write a blog on Difference between HTTP1.1 vs HTTP2
+
+//HTTP 1.1 :
+ HTTP 1.1 was released in 1997 and it is still the most common version of HTTP in use today. HTTP 1.1 introduced several improvements over the previous version, HTTP 1.0, such as:
+
+Persistent connections:
+ It allows multiple requests and responses to be sent over the same TCP connection, reducing the overhead of opening and closing connections for each request.
+ Pipelining allows clients to send multiple requests without waiting for the responses, increasing the throughput of the connection.
+
+Chunked transfer encoding: 
+ It allows servers to send responses in chunks, without specifying the content length beforehand, enabling dynamic content generation and streaming.
+
+Host header: 
+ It requires clients to send the host name of the server they are requesting from, allowing servers to host multiple domains on the same IP address.
+
+Cache control: 
+ It provides mechanisms for clients and servers to specify caching policies and validate cached resources, improving the efficiency and freshness of the content delivery.
+
+//HTTP 2 :
+
+HTTP 2 was released in 2015 and it is based on an experimental protocol called SPDY, developed by Google. HTTP 2 is designed to overcome some of the limitations and inefficiencies of HTTP 1.1, especially for modern web applications that use a lot of resources and require low latency. Some of the main features of HTTP 2 are:
+
+Binary framing: 
+ HTTP 2 uses a binary format for the messages, instead of the text-based format of HTTP 1.1, making the parsing and compression of the data more efficient and robust.
+
+Multiplexing: 
+ It allows multiple requests and responses to be interleaved on the same connection, using streams, frames, and headers. This eliminates the problem of head-of-line blocking, where a single slow request can block the entire connection.
+
+Server push: 
+ It allows servers to proactively send resources to the client, without waiting for a request, anticipating the client’s needs and reducing the number of round trips.
+
+Header compression: 
+ HTTP 2 uses a compression algorithm called HPACK to reduce the size of the headers, which can be redundant and verbose in HTTP 1.1, saving bandwidth and improving performance.
+
+Prioritization:
+ It allows clients to assign priorities to the requests, and servers to assign dependencies to the responses, enabling a more optimal allocation of the connection resources.                                                                  

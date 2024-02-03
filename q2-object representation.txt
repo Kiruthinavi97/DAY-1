@@ -1,0 +1,26 @@
+//Write a blog about objects and its internal representation in Javascript
+
+const obj = { 
+name:'Kiruthi',
+age :'26'
+gender : 'Female'
+};
+
+const arr =[1,2,3,4,5]
+//Index start from 0 [0,1,2,3,4] 
+
+//Object is a collection of key-value pairs, where the keys are the property names and the values can be data or reference to functions.
+ 
+
+// const obj = { name: "Kiruthi", age: "26", gender: "Female" };
+ {'name','age','gender'} //array of keys
+
+// create an array of keys
+  ['name', 'age', 'gender']
+
+// keys in an array
+ const keys = Object.keys(obj); // ['name', 'age', 'gender']
+
+// values in the array
+ const values = Object.values(obj); // ['Sam', 29, 'male]
+
